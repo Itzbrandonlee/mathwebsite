@@ -1,6 +1,8 @@
+body{ 
+    font: Arial, Helvetica, sans-serif;
+}
 #container {
     width: 1050px;
-    border: 1px solid grey;
     margin: 0 auto;
 }
 
@@ -14,6 +16,9 @@ h1 a{
 #searchbox {
     float: right;
     background: linear-gradient(lightgray, darkgrey);
+    -webkit-background: linear-gradient(lightgray, darkgrey);
+    -o-background: linear-gradient(lightgray, darkgrey);
+    -moz-background: linear-gradient(lightgray, darkgrey);
     width: 400px;
     height: 50px;
     padding: 20px 20px 0 20px;
@@ -26,6 +31,7 @@ h1 a{
     padding: 5px;
     font-size: 15px;
     color: purple;
+
 }
 
 .submit {
@@ -45,4 +51,130 @@ h1 a{
 
 .clear {
     clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu ul li {
+    float: left;
+    padding: 0 30px;
+    height: 30px;
+    border-right: 1px solid whitesmoke;
+}
+
+#menu {
+    height: 70px;
+    background: linear-gradient(rgb(221, 34, 34), darkred);
+    -webkit-background: linear-gradient(rgb(221, 34, 34), darkred);
+    -o-background: linear-gradient(rgb(221, 34, 34), darkred);
+    -moz-background: linear-gradient(rgb(221, 34, 34), darkred);
+    padding: 7px 0;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: whitesmoke;
+    line-height: 20px;
+    transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+
+}
+
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color:aliceblue
+}
+
+#menu ul li:last-child {
+    border-right: none;
+}
+
+#introduction {
+    background: linear-gradient(lightgray, darkgrey);
+    -webkit-background: linear-gradient(lightgray, darkgrey);
+    -o-background: linear-gradient(lightgray, darkgrey);
+    -moz-background: linear-gradient(lightgray, darkgrey);
+    padding: 30px;
+    margin: 16px 0;
+}
+
+#introduction h3 {
+    font-size: 45px;
+    color: darkred;
+    font-weight: normal;
+}
+
+#introduction p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.sidebar {
+    height: 500px;
+    width: 450px;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.sidebar h3{
+    color: darkred;
+    font-size: 30px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #e70808;
+    font-size: 23px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+}
+
+#leftsidebar ul li{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#rightsidebar ul li{
+    padding-bottom: 20px;
+}
+.sidebar ul{
+    padding-top: 8px;
+
+}
+#leftsidebar {
+    float: left;
+    
+}
+
+#rightsidebar{
+    float: right;
+}
+
+.footer {
+    height: 60px;
+    background: linear-gradient(rgb(221, 34, 34), darkred);
+    -webkit-background: linear-gradient(rgb(221, 34, 34), darkred);
+    -o-background: linear-gradient(rgb(221, 34, 34), darkred);
+    -moz-background: linear-gradient(rgb(221, 34, 34), darkred);
+    padding: 10px 30px;
+    margin-top: 15px;
 }
